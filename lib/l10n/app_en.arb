@@ -59,7 +59,7 @@
     "settingsPageGitHubLink": "Check out the code on GitHub!",
 
     "settingsPageAboutTitle": "About this App",
-    "settingsPageAboutContent": "Help me Decide v{version}\nCopyright 2023 TheCreator",
+    "settingsPageAboutContent": "Help me Decide v{version}\nCopyright 2025 TheCreator",
     "@settingsPageAboutContent": {
         "placeholders": {
             "version": {

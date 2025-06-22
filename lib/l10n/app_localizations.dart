@@ -347,7 +347,7 @@ abstract class AppLocalizations {
   /// No description provided for @settingsPageAboutContent.
   ///
   /// In en, this message translates to:
-  /// **'Help me Decide v{version}\nCopyright 2023 TheCreator'**
+  /// **'Help me Decide v{version}\nCopyright 2025 TheCreator'**
   String settingsPageAboutContent(String version);
 
   /// No description provided for @settingsPageAboutConfirm.

@@ -143,7 +143,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String settingsPageAboutContent(String version) {
-    return 'Help me Decide v$version\nCopyright 2023 TheCreator';
+    return 'Help me Decide v$version\nCopyright 2025 TheCreator';
   }
 
   @override
