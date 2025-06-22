@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:get/get.dart';
+import 'package:helpmedecide/l10n/app_localizations.dart';
 import 'package:helpmedecide/model/controllers.dart';
 import 'package:helpmedecide/model/sessions.dart';
 
@@ -63,11 +63,10 @@ class _DecidePageClassicState extends State<DecidePageClassic> {
                       });
                     },
                     style: ButtonStyle(
-                        elevation: MaterialStateProperty.all(4.0),
-                        shape:
-                            MaterialStateProperty.all<RoundedRectangleBorder>(
-                                const RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.zero))),
+                        elevation: WidgetStateProperty.all(4.0),
+                        shape: WidgetStateProperty.all<RoundedRectangleBorder>(
+                            const RoundedRectangleBorder(
+                                borderRadius: BorderRadius.zero))),
                     child: Text(getDecisionActionText(context),
                         style: const TextStyle(fontSize: 24)))),
           ],

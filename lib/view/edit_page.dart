@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:get/get.dart';
 import 'package:helpmedecide/model/controllers.dart';
+import 'package:helpmedecide/l10n/app_localizations.dart';
 import 'package:helpmedecide/model/sessions.dart';
 import 'package:helpmedecide/model/types.dart';
 
@@ -58,9 +58,13 @@ class _EditPageState extends State<EditPage> {
         appBar: AppBar(
           title: Text(widget.getPageTitleText(context)),
         ),
-        body: WillPopScope(
-          onWillPop: () async {
-            bool answer = await showDialog<bool>(
+        body: PopScope(
+          canPop: false,
+          onPopInvokedWithResult: (bool didPop, Object? result) async {
+            if (didPop) {
+              return;
+            }
+            final bool shouldPop = await showDialog<bool>(
                     context: context,
                     builder: (BuildContext context) => AlertDialog(
                           title: Text(widget.getDialogTitleText(context)),
@@ -76,7 +80,9 @@ class _EditPageState extends State<EditPage> {
                           ],
                         )) ??
                 false;
-            return answer;
+            if (context.mounted && shouldPop) {
+              Navigator.pop(context);
+            }
           },
           child: Center(
               child: Scrollbar(

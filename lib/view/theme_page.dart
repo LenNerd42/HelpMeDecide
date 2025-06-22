@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:get/get.dart';
+import 'package:helpmedecide/l10n/app_localizations.dart';
 import 'package:helpmedecide/model/controllers.dart';
 import 'package:helpmedecide/view/settings_page.dart';
 

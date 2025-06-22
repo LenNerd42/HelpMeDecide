@@ -1,9 +1,9 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
+import 'package:helpmedecide/l10n/app_localizations.dart';
 import 'package:helpmedecide/model/types.dart';
 import 'package:helpmedecide/view/decisions/decide_page_classic.dart';
 import 'package:helpmedecide/view/decisions/decide_page_wheel.dart';
